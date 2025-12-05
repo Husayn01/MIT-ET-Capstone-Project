@@ -1,0 +1,13 @@
+# 1. Ignore ALL CSV files in the Data folder because they are large
+Data/*.csv
+
+# 2. But... FORCE Git to keep the "Field info" folder (The small Excel docs)
+!Data/Field info/
+
+# 3. And keep the Data README
+!Data/README.md
+
+# 4. Ignore System & Notebook junk
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
